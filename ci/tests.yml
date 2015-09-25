@@ -14,4 +14,4 @@
 
     - fail: 
         msg: "Node Not Found, tests failed."
-      when: node_path.stdout != "/usr/local/bin/node"
+      when: node_path.rc != 0
